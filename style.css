@@ -1,8 +1,8 @@
-/* Google Fonts */
+/* Zoog Studio Inspired Premium Look */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Poppins', sans-serif; background-color: #fcfcfc; color: #333; }
+body { font-family: 'Poppins', sans-serif; background-color: #fff; color: #333; overflow-x: hidden; }
 
 /* Top Navigation Bar */
 nav { 
@@ -19,13 +19,14 @@ nav {
 .logo span { color: #e91e63; }
 nav ul { display: flex; list-style: none; }
 nav ul li { margin-left: 25px; }
-nav ul li a { color: #fff; text-decoration: none; font-size: 14px; font-weight: 500; text-transform: uppercase; }
+nav ul li a { color: #fff; text-decoration: none; font-size: 13px; font-weight: 500; text-transform: uppercase; letter-spacing: 1px; }
 
-/* Hero Section with Professional Background */
+/* Hero Section (The Big Image Part) */
 .main-hero { 
-    height: 90vh; 
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1974&auto=format&fit=crop'); 
+    height: 85vh; 
+    /* ਇਹ ਫੋਟੋ ਸਿੱਧੀ ਇੰਟਰਨੈੱਟ ਤੋਂ ਆਵੇਗੀ */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=2069&auto=format&fit=crop'); 
     background-size: cover; 
     background-position: center;
     display: flex;
@@ -34,18 +35,20 @@ nav ul li a { color: #fff; text-decoration: none; font-size: 14px; font-weight: 
     color: white;
     text-align: center;
 }
-.hero-overlay h1 { font-family: 'Playfair Display', serif; font-size: 60px; margin-bottom: 10px; }
-.hero-overlay p { font-size: 18px; margin-bottom: 30px; letter-spacing: 1px; }
+.hero-overlay h1 { font-family: 'Playfair Display', serif; font-size: 65px; margin-bottom: 15px; text-transform: uppercase; }
+.hero-overlay p { font-size: 20px; margin-bottom: 35px; font-weight: 300; }
 
-/* Buttons */
+/* Booking Button */
 .btn-primary { 
-    background: #e91e63; color: white; padding: 15px 35px; 
+    background: #e91e63; color: white; padding: 16px 40px; 
     text-decoration: none; font-weight: bold; border-radius: 50px; 
-    transition: 0.3s;
+    text-transform: uppercase; font-size: 14px;
+    transition: 0.4s ease;
+    border: 2px solid #e91e63;
 }
-.btn-primary:hover { background: #c2185b; }
+.btn-primary:hover { background: transparent; color: #e91e63; }
 
 /* About Section */
-.about-section { padding: 100px 15%; text-align: center; background: #fff; }
-.about-section h2 { font-family: 'Playfair Display', serif; font-size: 40px; margin-bottom: 20px; color: #111; }
-.about-section p { font-size: 16px; line-height: 1.8; color: #666; margin-bottom: 30px; }
+.about-section { padding: 100px 10%; text-align: center; background: #f9f9f9; }
+.about-section h2 { font-family: 'Playfair Display', serif; font-size: 45px; margin-bottom: 25px; color: #111; }
+.about-section p { font-size: 17px; line-height: 1.9; color: #555; max-width: 850px; margin: 0 auto; }
